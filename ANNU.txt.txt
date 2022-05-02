@@ -1,0 +1,1038 @@
+DAY-1
+
+$ pwd //it's check working directory  
+/c/Users/admin/OneDrive/Desktop/terminal
+
+$ mkdir a b c // mkdir is used to create directory
+
+$ ls -p // shows all files and directories also
+a/  b/  c/
+
+$ ls -l // list file and folders in long format
+total 0
+drwxr-xr-x 1 admin 197121 0 May  2 08:11 a/
+drwxr-xr-x 1 admin 197121 0 May  2 08:11 b/
+drwxr-xr-x 1 admin 197121 0 May  2 08:11 c/
+
+$ touch abc def bd.txt //create a empty file
+$ ls -p
+a/  abc  b/  bd.txt  c/  def
+
+$ ls ~ // list file and folder in home directory
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ Hello.java
+ HelloWorld.java
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{ea91b2a0-800c-11ec-aac8-d4eee9088366}.TxR.0.regtrans-ms
+ NTUSER.DAT{ea91b2a0-800c-11ec-aac8-d4eee9088366}.TxR.1.regtrans-ms
+ NTUSER.DAT{ea91b2a0-800c-11ec-aac8-d4eee9088366}.TxR.2.regtrans-ms
+ NTUSER.DAT{ea91b2a0-800c-11ec-aac8-d4eee9088366}.TxR.blf
+ NTUSER.DAT{ea91b2a1-800c-11ec-aac8-d4eee9088366}.TM.blf
+ NTUSER.DAT{ea91b2a1-800c-11ec-aac8-d4eee9088366}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ea91b2a1-800c-11ec-aac8-d4eee9088366}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ annu/
+ file.txt
+ mannu/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ passwd/
+ temp/
+ test
+
+$ cd ~ //go to the home directory
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ Hello.java
+ HelloWorld.java
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{ea91b2a0-800c-11ec-aac8-d4eee9088366}.TxR.0.regtrans-ms
+ NTUSER.DAT{ea91b2a0-800c-11ec-aac8-d4eee9088366}.TxR.1.regtrans-ms
+ NTUSER.DAT{ea91b2a0-800c-11ec-aac8-d4eee9088366}.TxR.2.regtrans-ms
+ NTUSER.DAT{ea91b2a0-800c-11ec-aac8-d4eee9088366}.TxR.blf
+ NTUSER.DAT{ea91b2a1-800c-11ec-aac8-d4eee9088366}.TM.blf
+ NTUSER.DAT{ea91b2a1-800c-11ec-aac8-d4eee9088366}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ea91b2a1-800c-11ec-aac8-d4eee9088366}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ annu/
+ file.txt
+ mannu/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ passwd/
+ temp/
+ test$ 
+
+$cd - //come back to the terminal 
+/c/Users/admin/OneDrive/Desktop/terminal
+
+$ ls .. // list file and folder in parent directory
+ Annu.txt.txt                         'Microsoft Teams.lnk'*     'chapter 0'/   rewq/
+ Annu_Kumari.jpg                       Postman.lnk*               desktop.ini   terminal/
+'Downloaded from TutsGalaxy.com.txt'   TutsGalaxy.com.txt         images.jpeg   videos/
+ HTML_NOTES/
+
+$ mkdir temp // create a temp folder
+
+$ ls . // list file and folder in current directory
+a/  abc  b/  bd.txt  c/  def  temp/
+
+$ rm -r  temp // remove temp folder
+$ ls .
+a/  abc  b/  bd.txt  c/  def
+
+$ mkdir temp/temp // create nested directory(temp inside temp)
+mkdir: cannot create directory ‘temp/temp’: No such file or directory
+
+$ mkdir a/a //create a inside a
+$ ls a/
+a/
+$ touch abc.txt def.txt a.txt
+$ ls .
+a/  a.txt  abc  abc.txt  b/  bd.txt  c/  def  def.txt
+$ cp abc.txt ef.txt //copy abc.txt to ef.txt
+$ ls .
+a/  a.txt  abc  abc.txt  b/  bd.txt  c/  def  def.txt  ef.txt
+
+$ mv a.txt x.txt //move a.txt to x.txt
+$ ls . 
+a/  abc  abc.txt  b/  bd.txt  c/  def  def.txt  ef.txt  x.txt
+
+$ where cp //To display where is cp command.
+C:\Program Files\Git\usr\bin\cp.exe
+
+$ ls -l /bin //To check which command is in bin in long format
+total 92868
+-rwxr-xr-x 1 admin 197121   73442 Jan 29 07:33 '[.exe'*
+-rwxr-xr-x 1 admin 197121    3075 Jan 29 07:33  addgnupghome*
+-rwxr-xr-x 1 admin 197121    2217 Jan 29 07:33  applygnupgdefaults*
+-rwxr-xr-x 1 admin 197121   36388 Jan 29 07:33  arch.exe*
+-rwxr-xr-x 1 admin 197121     689 Jan 29 07:33  astextplain*
+-rwxr-xr-x 1 admin 197121   27040 Jan 29 07:33  autopoint*
+-rwxr-xr-x 1 admin 197121  627466 Jan 29 07:33  awk.exe*
+-rwxr-xr-x 1 admin 197121   55902 Jan 29 07:33  b2sum.exe*
+-rwxr-xr-x 1 admin 197121    7339 Jan 29 07:33  backup*
+-rwxr-xr-x 1 admin 197121   42331 Jan 29 07:33  base32.exe*
+-rwxr-xr-x 1 admin 197121   42331 Jan 29 07:33  base64.exe*
+-rwxr-xr-x 1 admin 197121   35907 Jan 29 07:33  basename.exe*
+-rwxr-xr-x 1 admin 197121   50523 Jan 29 07:33  basenc.exe*
+-rwxr-xr-x 1 admin 197121 2129408 Jan 29 07:33  bash.exe*
+-rwxr-xr-x 1 admin 197121    7006 Jan 29 07:33  bashbug*
+-rwxr-xr-x 1 admin 197121   92176 Jan 29 07:33  bunzip2.exe*
+-rwxr-xr-x 1 admin 197121   92176 Jan 29 07:33  bzcat.exe*
+-rwxr-xr-x 1 admin 197121    2140 Jan 29 07:33  bzcmp*
+-rwxr-xr-x 1 admin 197121    2140 Jan 29 07:33  bzdiff*
+-rwxr-xr-x 1 admin 197121    2054 Jan 29 07:33  bzegrep*
+-rwxr-xr-x 1 admin 197121    2054 Jan 29 07:33  bzfgrep*
+-rwxr-xr-x 1 admin 197121    2054 Jan 29 07:33  bzgrep*
+-rwxr-xr-x 1 admin 197121   92176 Jan 29 07:33  bzip2.exe*
+-rwxr-xr-x 1 admin 197121   14653 Jan 29 07:33  bzip2recover.exe*
+-rwxr-xr-x 1 admin 197121    1297 Jan 29 07:33  bzless*
+-rwxr-xr-x 1 admin 197121    1297 Jan 29 07:33  bzmore*
+-rwxr-xr-x 1 admin 197121    6230 Jan 29 07:33  c_rehash*
+-rwxr-xr-x 1 admin 197121   78336 Jan 29 07:33  captoinfo.exe*
+-rwxr-xr-x 1 admin 197121   39743 Jan 29 07:33  cat.exe*
+-rwxr-xr-x 1 admin 197121  100008 Jan 29 07:33  chattr.exe*
+-rwxr-xr-x 1 admin 197121   61136 Jan 29 07:33  chcon.exe*
+-rwxr-xr-x 1 admin 197121   68623 Jan 29 07:33  chgrp.exe*
+-rwxr-xr-x 1 admin 197121   60469 Jan 29 07:33  chmod.exe*
+-rwxr-xr-x 1 admin 197121   70735 Jan 29 07:33  chown.exe*
+-rwxr-xr-x 1 admin 197121   44160 Jan 29 07:33  chroot.exe*
+-rwxr-xr-x 1 admin 197121   38092 Jan 29 07:33  cksum.exe*
+-rwxr-xr-x 1 admin 197121   10752 Jan 29 07:33  clear.exe*
+-rwxr-xr-x 1 admin 197121   48718 Jan 29 07:33  cmp.exe*
+-rwxr-xr-x 1 admin 197121   44096 Jan 29 07:33  column.exe*
+-rwxr-xr-x 1 admin 197121   40237 Jan 29 07:33  comm.exe*
+drwxr-xr-x 1 admin 197121       0 Feb  1 01:54  core_perl/
+-rwxr-xr-x 1 admin 197121  116189 Jan 29 07:33  cp.exe*
+-rwxr-xr-x 1 admin 197121  112205 Jan 29 07:33  csplit.exe*
+-rwxr-xr-x 1 admin 197121   45102 Jan 29 07:33  cut.exe*
+-rwxr-xr-x 1 admin 197121  953136 Jan 29 07:33  cygcheck.exe*
+-rwxr-xr-x 1 admin 197121  159024 Jan 29 07:33  cygpath.exe*
+-rwxr-xr-x 1 admin 197121  313760 Jan 29 07:33  cygwin-console-helper.exe*
+-rwxr-xr-x 1 admin 197121   51302 Jan 29 07:33  d2u.exe*
+-rwxr-xr-x 1 admin 197121  111751 Jan 29 07:33  dash.exe*
+-rwxr-xr-x 1 admin 197121  121713 Jan 29 07:33  date.exe*
+-rwxr-xr-x 1 admin 197121   93292 Jan 29 07:33  dd.exe*
+-rwxr-xr-x 1 admin 197121  106947 Jan 29 07:33  df.exe*
+-rwxr-xr-x 1 admin 197121  211777 Jan 29 07:33  diff.exe*
+-rwxr-xr-x 1 admin 197121   63289 Jan 29 07:33  diff3.exe*
+-rwxr-xr-x 1 admin 197121  151527 Jan 29 07:33  dir.exe*
+-rwxr-xr-x 1 admin 197121   58500 Jan 29 07:33  dircolors.exe*
+-rwxr-xr-x 1 admin 197121   94929 Jan 29 07:33  dirmngr-client.exe*
+-rwxr-xr-x 1 admin 197121  376924 Jan 29 07:33  dirmngr.exe*
+-rwxr-xr-x 1 admin 197121   35342 Jan 29 07:33  dirname.exe*
+-rwxr-xr-x 1 admin 197121    3363 Jan 29 07:33  docx2txt*
+-rwxr-xr-x 1 admin 197121   21572 Jan 29 07:33  docx2txt.pl*
+-rwxr-xr-x 1 admin 197121   51302 Jan 29 07:33  dos2unix.exe*
+-rwxr-xr-x 1 admin 197121  169946 Jan 29 07:33  du.exe*
+-rwxr-xr-x 1 admin 197121   16517 Jan 29 07:33  dumpsexp.exe*
+-rwxr-xr-x 1 admin 197121   36779 Jan 29 07:33  echo.exe*
+-rwxr-xr-x 1 admin 197121      28 Jan 29 07:33  egrep*
+-rwxr-xr-x 1 admin 197121   46196 Jan 29 07:33  env.exe*
+-rwxr-xr-x 1 admin 197121   35226 Jan 29 07:33  envsubst.exe*
+-rwxr-xr-x 1 admin 197121 3317248 Jan 29 07:33  ex.exe*
+-rwxr-xr-x 1 admin 197121   38673 Jan 29 07:33  expand.exe*
+-rwxr-xr-x 1 admin 197121  111126 Jan 29 07:33  expr.exe*
+-rwxr-xr-x 1 admin 197121   77490 Jan 29 07:33  factor.exe*
+-rwxr-xr-x 1 admin 197121   34147 Jan 29 07:33  false.exe*
+-rwxr-xr-x 1 admin 197121      28 Jan 29 07:33  fgrep*
+-rwxr-xr-x 1 admin 197121   32390 Jan 29 07:33  fido2-assert.exe*
+-rwxr-xr-x 1 admin 197121   30520 Jan 29 07:33  fido2-cred.exe*
+-rwxr-xr-x 1 admin 197121   44781 Jan 29 07:33  fido2-token.exe*
+-rwxr-xr-x 1 admin 197121   24194 Jan 29 07:33  file.exe*
+-rwxr-xr-x 1 admin 197121  287353 Jan 29 07:33  find.exe*
+-rwxr-xr-x 1 admin 197121    4797 Jan 29 07:33  findssl.sh*
+-rwxr-xr-x 1 admin 197121   44354 Jan 29 07:33  fmt.exe*
+-rwxr-xr-x 1 admin 197121   39228 Jan 29 07:33  fold.exe*
+-rwxr-xr-x 1 admin 197121   33629 Jan 29 07:33  funzip.exe*
+-rwxr-xr-x 1 admin 197121   19696 Jan 29 07:33  gapplication.exe*
+-rwxr-xr-x 1 admin 197121  627466 Jan 29 07:33  gawk-5.0.0.exe*
+-rwxr-xr-x 1 admin 197121  627466 Jan 29 07:33  gawk.exe*
+-rwxr-xr-x 1 admin 197121   45629 Jan 29 07:33  gdbus.exe*
+-rwxr-xr-x 1 admin 197121  108720 Jan 29 07:33  gencat.exe*
+-rwxr-xr-x 1 admin 197121  106880 Jan 29 07:33  getconf.exe*
+-rwxr-xr-x 1 admin 197121    5197 Jan 29 07:33  getemojis*
+-rwxr-xr-x 1 admin 197121   96824 Jan 29 07:33  getfacl.exe*
+-rwxr-xr-x 1 admin 197121   17624 Jan 29 07:33  getopt.exe*
+-rwxr-xr-x 1 admin 197121   35759 Jan 29 07:33  gettext.exe*
+-rwxr-xr-x 1 admin 197121    5188 Jan 29 07:33  gettext.sh*
+-rwxr-xr-x 1 admin 197121   42268 Jan 29 07:33  gettextize*
+-rwxr-xr-x 1 admin 197121   14075 Jan 29 07:33  gio-querymodules.exe*
+-rwxr-xr-x 1 admin 197121    6937 Jan 29 07:33  git-flow*
+-rw-r--r-- 1 admin 197121   24605 Jan 29 07:33  git-flow-bugfix
+-rw-r--r-- 1 admin 197121    8619 Jan 29 07:33  git-flow-config
+-rw-r--r-- 1 admin 197121   24690 Jan 29 07:33  git-flow-feature
+-rw-r--r-- 1 admin 197121   24270 Jan 29 07:33  git-flow-hotfix
+-rw-r--r-- 1 admin 197121   15496 Jan 29 07:33  git-flow-init
+-rw-r--r-- 1 admin 197121    2797 Jan 29 07:33  git-flow-log
+-rw-r--r-- 1 admin 197121   37951 Jan 29 07:33  git-flow-release
+-rw-r--r-- 1 admin 197121    6952 Jan 29 07:33  git-flow-support
+-rw-r--r-- 1 admin 197121    2168 Jan 29 07:33  git-flow-version
+-rw-r--r-- 1 admin 197121   19838 Jan 29 07:33  gitflow-common
+-rw-r--r-- 1 admin 197121   35637 Jan 29 07:33  gitflow-shFlags
+-rwxr-xr-x 1 admin 197121   38590 Jan 29 07:33  gkill.exe*
+-rwxr-xr-x 1 admin 197121   52688 Jan 29 07:33  glib-compile-schemas.exe*
+-rwxr-xr-x 1 admin 197121   95696 Jan 29 07:33  gmondump.exe*
+-rwxr-xr-x 1 admin 197121   12622 Jan 29 07:33  gobject-query.exe*
+-rwxr-xr-x 1 admin 197121  373026 Jan 29 07:33  gpg-agent.exe*
+-rwxr-xr-x 1 admin 197121  137339 Jan 29 07:33  gpg-connect-agent.exe*
+-rwxr-xr-x 1 admin 197121   32802 Jan 29 07:33  gpg-error.exe*
+-rwxr-xr-x 1 admin 197121  178464 Jan 29 07:33  gpg-wks-server.exe*
+-rwxr-xr-x 1 admin 197121 1008641 Jan 29 07:33  gpg.exe*
+-rwxr-xr-x 1 admin 197121  141299 Jan 29 07:33  gpgconf.exe*
+-rwxr-xr-x 1 admin 197121   28044 Jan 29 07:33  gpgparsemail.exe*
+-rwxr-xr-x 1 admin 197121  223325 Jan 29 07:33  gpgscm.exe*
+-rwxr-xr-x 1 admin 197121  471875 Jan 29 07:33  gpgsm.exe*
+-rwxr-xr-x 1 admin 197121   64394 Jan 29 07:33  gpgsplit.exe*
+-rwxr-xr-x 1 admin 197121  129580 Jan 29 07:33  gpgtar.exe*
+-rwxr-xr-x 1 admin 197121  430471 Jan 29 07:33  gpgv.exe*
+-rwxr-xr-x 1 admin 197121  215249 Jan 29 07:33  grep.exe*
+-rwxr-xr-x 1 admin 197121   37102 Jan 29 07:33  groups.exe*
+-rwxr-xr-x 1 admin 197121   26477 Jan 29 07:33  gsettings.exe*
+-rwxr-xr-x 1 admin 197121    2346 Jan 29 07:33  gunzip*
+-rwxr-xr-x 1 admin 197121    6376 Jan 29 07:33  gzexe*
+-rwxr-xr-x 1 admin 197121  107091 Jan 29 07:33  gzip.exe*
+-rwxr-xr-x 1 admin 197121   45925 Jan 29 07:33  head.exe*
+-rwxr-xr-x 1 admin 197121   16553 Jan 29 07:33  hmac256.exe*
+-rwxr-xr-x 1 admin 197121   34339 Jan 29 07:33  hostid.exe*
+-rwxr-xr-x 1 admin 197121   34918 Jan 29 07:33  hostname.exe*
+-rwxr-xr-x 1 admin 197121   29501 Jan 29 07:33  iconv.exe*
+-rwxr-xr-x 1 admin 197121   44471 Jan 29 07:33  id.exe*
+-rwxr-xr-x 1 admin 197121   55296 Jan 29 07:33  infocmp.exe*
+-rwxr-xr-x 1 admin 197121   78336 Jan 29 07:33  infotocap.exe*
+-rwxr-xr-x 1 admin 197121  152032 Jan 29 07:33  install.exe*
+-rwxr-xr-x 1 admin 197121   52758 Jan 29 07:33  join.exe*
+-rwxr-xr-x 1 admin 197121  147551 Jan 29 07:33  kbxutil.exe*
+-rwxr-xr-x 1 admin 197121  120392 Jan 29 07:33  kill.exe*
+-rwxr-xr-x 1 admin 197121  124248 Jan 29 07:33  ldd.exe*
+-rwxr-xr-x 1 admin 197121  150024 Jan 29 07:33  ldh.exe*
+-rwxr-xr-x 1 admin 197121  180015 Jan 29 07:33  less.exe*
+-rwxr-xr-x 1 admin 197121   12267 Jan 29 07:33  lessecho.exe*
+-rwxr-xr-x 1 admin 197121   17512 Jan 29 07:33  lesskey.exe*
+-rwxr-xr-x 1 admin 197121   34846 Jan 29 07:33  link.exe*
+-rwxr-xr-x 1 admin 197121   78613 Jan 29 07:33  ln.exe*
+-rwxr-xr-x 1 admin 197121  135104 Jan 29 07:33  locale.exe*
+-rwxr-xr-x 1 admin 197121  144595 Jan 29 07:33  locate.exe*
+-rwxr-xr-x 1 admin 197121   34879 Jan 29 07:33  logname.exe*
+-rwxr-xr-x 1 admin 197121  151527 Jan 29 07:33  ls.exe*
+-rwxr-xr-x 1 admin 197121   98360 Jan 29 07:33  lsattr.exe*
+-rwxr-xr-x 1 admin 197121   51302 Jan 29 07:33  mac2unix.exe*
+-rwxr-xr-x 1 admin 197121   47548 Jan 29 07:33  md5sum.exe*
+-rwxr-xr-x 1 admin 197121  102496 Jan 29 07:33  minidumper.exe*
+-rwxr-xr-x 1 admin 197121   12680 Jan 29 07:33  mintheme*
+-rwxr-xr-x 1 admin 197121  998969 Jan 29 07:33  mintty.exe*
+-rwxr-xr-x 1 admin 197121   73995 Jan 29 07:33  mkdir.exe*
+-rwxr-xr-x 1 admin 197121   37076 Jan 29 07:33  mkfifo.exe*
+-rwxr-xr-x 1 admin 197121  129552 Jan 29 07:33  mkgroup.exe*
+-rwxr-xr-x 1 admin 197121   40762 Jan 29 07:33  mknod.exe*
+-rwxr-xr-x 1 admin 197121  128888 Jan 29 07:33  mkpasswd.exe*
+-rwxr-xr-x 1 admin 197121   44704 Jan 29 07:33  mktemp.exe*
+-rwxr-xr-x 1 admin 197121  123960 Jan 29 07:33  mount.exe*
+-rwxr-xr-x 1 admin 197121   18116 Jan 29 07:33  mpicalc.exe*
+-rwxr-xr-x 1 admin 197121   25198 Jan 29 07:33  msgattrib.exe*
+-rwxr-xr-x 1 admin 197121   24111 Jan 29 07:33  msgcat.exe*
+-rwxr-xr-x 1 admin 197121   25115 Jan 29 07:33  msgcmp.exe*
+-rwxr-xr-x 1 admin 197121   24394 Jan 29 07:33  msgcomm.exe*
+-rwxr-xr-x 1 admin 197121   20949 Jan 29 07:33  msgconv.exe*
+-rwxr-xr-x 1 admin 197121   20968 Jan 29 07:33  msgen.exe*
+-rwxr-xr-x 1 admin 197121   19543 Jan 29 07:33  msgexec.exe*
+-rwxr-xr-x 1 admin 197121   28717 Jan 29 07:33  msgfilter.exe*
+-rwxr-xr-x 1 admin 197121   80064 Jan 29 07:33  msgfmt.exe*
+-rwxr-xr-x 1 admin 197121  107878 Jan 29 07:33  msggrep.exe*
+-rwxr-xr-x 1 admin 197121   47586 Jan 29 07:33  msginit.exe*
+-rwxr-xr-x 1 admin 197121   54800 Jan 29 07:33  msgmerge.exe*
+-rwxr-xr-x 1 admin 197121   33435 Jan 29 07:33  msgunfmt.exe*
+-rwxr-xr-x 1 admin 197121   23613 Jan 29 07:33  msguniq.exe*
+-rwxr-xr-x 1 admin 197121 3584384 Jan 29 07:33  msys-2.0.dll*
+-rwxr-xr-x 1 admin 197121  177507 Jan 29 07:33  msys-apr-1-0.dll*
+-rwxr-xr-x 1 admin 197121  131317 Jan 29 07:33  msys-aprutil-1-0.dll*
+-rwxr-xr-x 1 admin 197121  520749 Jan 29 07:33  msys-asn1-8.dll*
+-rwxr-xr-x 1 admin 197121   70618 Jan 29 07:33  msys-assuan-0.dll*
+-rwxr-xr-x 1 admin 197121   67277 Jan 29 07:33  msys-bz2-1.dll*
+-rwxr-xr-x 1 admin 197121   49547 Jan 29 07:33  msys-cbor-0.8.dll*
+-rwxr-xr-x 1 admin 197121   10102 Jan 29 07:33  msys-com_err-1.dll*
+-rwxr-xr-x 1 admin 197121   40313 Jan 29 07:33  msys-crypt-0.dll*
+-rwxr-xr-x 1 admin 197121 2483970 Jan 29 07:33  msys-crypto-1.1.dll*
+-rwxr-xr-x 1 admin 197121  179577 Jan 29 07:33  msys-edit-0.dll*
+-rwxr-xr-x 1 admin 197121  170554 Jan 29 07:33  msys-expat-1.dll*
+-rwxr-xr-x 1 admin 197121   26112 Jan 29 07:33  msys-ffi-7.dll*
+-rwxr-xr-x 1 admin 197121  149985 Jan 29 07:33  msys-fido2-1.dll*
+-rwxr-xr-x 1 admin 197121   76038 Jan 29 07:33  msys-gcc_s-seh-1.dll*
+-rwxr-xr-x 1 admin 197121  815927 Jan 29 07:33  msys-gcrypt-20.dll*
+-rwxr-xr-x 1 admin 197121 1365622 Jan 29 07:33  msys-gettextlib-0-21.dll*
+-rwxr-xr-x 1 admin 197121  297034 Jan 29 07:33  msys-gettextsrc-0-21.dll*
+-rwxr-xr-x 1 admin 197121 1742134 Jan 29 07:33  msys-gio-2.0-0.dll*
+-rwxr-xr-x 1 admin 197121 1163248 Jan 29 07:33  msys-glib-2.0-0.dll*
+-rwxr-xr-x 1 admin 197121   14709 Jan 29 07:33  msys-gmodule-2.0-0.dll*
+-rwxr-xr-x 1 admin 197121  581162 Jan 29 07:33  msys-gmp-10.dll*
+-rwxr-xr-x 1 admin 197121 1728448 Jan 29 07:33  msys-gnutls-30.dll*
+-rwxr-xr-x 1 admin 197121  315131 Jan 29 07:33  msys-gobject-2.0-0.dll*
+-rwxr-xr-x 1 admin 197121  132161 Jan 29 07:33  msys-gpg-error-0.dll*
+-rwxr-xr-x 1 admin 197121  224187 Jan 29 07:33  msys-gssapi-3.dll*
+-rwxr-xr-x 1 admin 197121  196920 Jan 29 07:33  msys-hcrypto-4.dll*
+-rwxr-xr-x 1 admin 197121   50402 Jan 29 07:33  msys-heimbase-1.dll*
+-rwxr-xr-x 1 admin 197121   32241 Jan 29 07:33  msys-heimntlm-0.dll*
+-rwxr-xr-x 1 admin 197121  270431 Jan 29 07:33  msys-hogweed-6.dll*
+-rwxr-xr-x 1 admin 197121  277150 Jan 29 07:33  msys-hx509-5.dll*
+-rwxr-xr-x 1 admin 197121 1023499 Jan 29 07:33  msys-iconv-2.dll*
+-rwxr-xr-x 1 admin 197121  129023 Jan 29 07:33  msys-idn2-0.dll*
+-rwxr-xr-x 1 admin 197121   45895 Jan 29 07:33  msys-intl-8.dll*
+-rwxr-xr-x 1 admin 197121   28576 Jan 29 07:33  msys-kafs-0.dll*
+-rwxr-xr-x 1 admin 197121  474135 Jan 29 07:33  msys-krb5-26.dll*
+-rwxr-xr-x 1 admin 197121  238572 Jan 29 07:33  msys-ksba-8.dll*
+-rwxr-xr-x 1 admin 197121  197871 Jan 29 07:33  msys-lz4-1.dll*
+-rwxr-xr-x 1 admin 197121  159222 Jan 29 07:33  msys-magic-1.dll*
+-rwxr-xr-x 1 admin 197121 2717824 Jan 29 07:33  msys-mpfr-6.dll*
+-rwxr-xr-x 1 admin 197121  319746 Jan 29 07:33  msys-ncursesw6.dll*
+-rwxr-xr-x 1 admin 197121  259507 Jan 29 07:33  msys-nettle-8.dll*
+-rwxr-xr-x 1 admin 197121   16068 Jan 29 07:33  msys-npth-0.dll*
+-rwxr-xr-x 1 admin 197121 1091656 Jan 29 07:33  msys-p11-kit-0.dll*
+-rwxr-xr-x 1 admin 197121  286198 Jan 29 07:33  msys-pcre-1.dll*
+-rwxr-xr-x 1 admin 197121 3415604 Jan 29 07:33  msys-perl5_34.dll*
+-rwxr-xr-x 1 admin 197121   67829 Jan 29 07:33  msys-psl-5.dll*
+-rwxr-xr-x 1 admin 197121  263878 Jan 29 07:33  msys-readline8.dll*
+-rwxr-xr-x 1 admin 197121   66082 Jan 29 07:33  msys-roken-18.dll*
+-rwxr-xr-x 1 admin 197121   98888 Jan 29 07:33  msys-sasl2-3.dll*
+-rwxr-xr-x 1 admin 197121   99729 Jan 29 07:33  msys-serf-1-0.dll*
+-rwxr-xr-x 1 admin 197121  163699 Jan 29 07:33  msys-smartcols-1.dll*
+-rwxr-xr-x 1 admin 197121 1289337 Jan 29 07:33  msys-sqlite3-0.dll*
+-rwxr-xr-x 1 admin 197121  528477 Jan 29 07:33  msys-ssl-1.1.dll*
+-rwxr-xr-x 1 admin 197121  578961 Jan 29 07:33  msys-svn_client-1-0.dll*
+-rwxr-xr-x 1 admin 197121  110411 Jan 29 07:33  msys-svn_delta-1-0.dll*
+-rwxr-xr-x 1 admin 197121   88067 Jan 29 07:33  msys-svn_diff-1-0.dll*
+-rwxr-xr-x 1 admin 197121   45397 Jan 29 07:33  msys-svn_fs-1-0.dll*
+-rwxr-xr-x 1 admin 197121  303564 Jan 29 07:33  msys-svn_fs_fs-1-0.dll*
+-rwxr-xr-x 1 admin 197121   13077 Jan 29 07:33  msys-svn_fs_util-1-0.dll*
+-rwxr-xr-x 1 admin 197121  296199 Jan 29 07:33  msys-svn_fs_x-1-0.dll*
+-rwxr-xr-x 1 admin 197121   50453 Jan 29 07:33  msys-svn_ra-1-0.dll*
+-rwxr-xr-x 1 admin 197121   38900 Jan 29 07:33  msys-svn_ra_local-1-0.dll*
+-rwxr-xr-x 1 admin 197121  193287 Jan 29 07:33  msys-svn_ra_serf-1-0.dll*
+-rwxr-xr-x 1 admin 197121  126601 Jan 29 07:33  msys-svn_ra_svn-1-0.dll*
+-rwxr-xr-x 1 admin 197121  239643 Jan 29 07:33  msys-svn_repos-1-0.dll*
+-rwxr-xr-x 1 admin 197121  791499 Jan 29 07:33  msys-svn_subr-1-0.dll*
+-rwxr-xr-x 1 admin 197121   44100 Jan 29 07:33  msys-svn_swig_perl-1-0.dll*
+-rwxr-xr-x 1 admin 197121  696488 Jan 29 07:33  msys-svn_wc-1-0.dll*
+-rwxr-xr-x 1 admin 197121   70621 Jan 29 07:33  msys-tasn1-6.dll*
+-rwxr-xr-x 1 admin 197121   61991 Jan 29 07:33  msys-ticw6.dll*
+-rwxr-xr-x 1 admin 197121 1644899 Jan 29 07:33  msys-unistring-2.dll*
+-rwxr-xr-x 1 admin 197121   27650 Jan 29 07:33  msys-uuid-1.dll*
+-rwxr-xr-x 1 admin 197121  164463 Jan 29 07:33  msys-wind-0.dll*
+-rwxr-xr-x 1 admin 197121   85068 Jan 29 07:33  msys-z.dll*
+-rwxr-xr-x 1 admin 197121  124990 Jan 29 07:33  mv.exe*
+-rwxr-xr-x 1 admin 197121  362893 Jan 29 07:33  nano.exe*
+-rwxr-xr-x 1 admin 197121   18460 Jan 29 07:33  nettle-hash.exe*
+-rwxr-xr-x 1 admin 197121   10273 Jan 29 07:33  nettle-lfib-stream.exe*
+-rwxr-xr-x 1 admin 197121   18548 Jan 29 07:33  nettle-pbkdf2.exe*
+-rwxr-xr-x 1 admin 197121   35793 Jan 29 07:33  ngettext.exe*
+-rwxr-xr-x 1 admin 197121   38061 Jan 29 07:33  nice.exe*
+-rwxr-xr-x 1 admin 197121  104060 Jan 29 07:33  nl.exe*
+-rwxr-xr-x 1 admin 197121   37106 Jan 29 07:33  nohup.exe*
+-rwxr-xr-x 1 admin 197121     635 Jan 29 07:33  notepad*
+-rwxr-xr-x 1 admin 197121   37683 Jan 29 07:33  nproc.exe*
+-rwxr-xr-x 1 admin 197121   62488 Jan 29 07:33  numfmt.exe*
+-rwxr-xr-x 1 admin 197121   88788 Jan 29 07:33  od.exe*
+-rwxr-xr-x 1 admin 197121  676529 Jan 29 07:33  openssl.exe*
+-rwxr-xr-x 1 admin 197121   31997 Jan 29 07:33  p11-kit.exe*
+-rwxr-xr-x 1 admin 197121  127320 Jan 29 07:33  passwd.exe*
+-rwxr-xr-x 1 admin 197121   38612 Jan 29 07:33  paste.exe*
+-rwxr-xr-x 1 admin 197121  174011 Jan 29 07:33  patch.exe*
+-rwxr-xr-x 1 admin 197121   36386 Jan 29 07:33  pathchk.exe*
+-rwxr-xr-x 1 admin 197121   14391 Jan 29 07:33  perl.exe*
+-rwxr-xr-x 1 admin 197121   14391 Jan 29 07:33  perl5.34.0.exe*
+-rwxr-xr-x 1 admin 197121   78988 Jan 29 07:33  pinentry-w32.exe*
+-rwxr-xr-x 1 admin 197121   78988 Jan 29 07:33  pinentry.exe*
+-rwxr-xr-x 1 admin 197121   41602 Jan 29 07:33  pinky.exe*
+-rwxr-xr-x 1 admin 197121   23459 Jan 29 07:33  pkcs1-conv.exe*
+-rwxr-xr-x 1 admin 197121   90944 Jan 29 07:33  pldd.exe*
+-rwxr-xr-x 1 admin 197121   17213 Jan 29 07:33  pluginviewer.exe*
+-rwxr-xr-x 1 admin 197121   74646 Jan 29 07:33  pr.exe*
+-rwxr-xr-x 1 admin 197121   34307 Jan 29 07:33  printenv.exe*
+-rwxr-xr-x 1 admin 197121   73539 Jan 29 07:33  printf.exe*
+-rwxr-xr-x 1 admin 197121  203088 Jan 29 07:33  profiler.exe*
+-rwxr-xr-x 1 admin 197121  113144 Jan 29 07:33  ps.exe*
+-rwxr-xr-x 1 admin 197121   22781 Jan 29 07:33  psl-make-dafsa*
+-rwxr-xr-x 1 admin 197121   17056 Jan 29 07:33  psl.exe*
+-rwxr-xr-x 1 admin 197121  130279 Jan 29 07:33  ptx.exe*
+-rwxr-xr-x 1 admin 197121   37172 Jan 29 07:33  pwd.exe*
+-rwxr-xr-x 1 admin 197121   49515 Jan 29 07:33  readlink.exe*
+-rwxr-xr-x 1 admin 197121   51112 Jan 29 07:33  realpath.exe*
+-rwxr-xr-x 1 admin 197121  905426 Jan 29 07:33  rebase.exe*
+-rwxr-xr-x 1 admin 197121    7151 Jan 29 07:33  rebaseall*
+-rwxr-xr-x 1 admin 197121   17007 Jan 29 07:33  recode-sr-latin.exe*
+-rwxr-xr-x 1 admin 197121  132800 Jan 29 07:33  regtool.exe*
+-rwxr-xr-x 1 admin 197121   21504 Jan 29 07:33  reset.exe*
+-rwxr-xr-x 1 admin 197121    5997 Jan 29 07:33  restore*
+-rwxr-xr-x 1 admin 197121   65349 Jan 29 07:33  rm.exe*
+-rwxr-xr-x 1 admin 197121   64295 Jan 29 07:33  rmdir.exe*
+-rwxr-xr-x 1 admin 197121  362893 Jan 29 07:33  rnano.exe*
+-rwxr-xr-x 1 admin 197121   35329 Jan 29 07:33  runcon.exe*
+-rwxr-xr-x 1 admin 197121 3326494 Jan 29 07:33  rview.exe*
+-rwxr-xr-x 1 admin 197121 3326494 Jan 29 07:33  rvim.exe*
+-rwxr-xr-x 1 admin 197121  184573 Jan 29 07:33  scp.exe*
+-rwxr-xr-x 1 admin 197121   54426 Jan 29 07:33  sdiff.exe*
+-rwxr-xr-x 1 admin 197121  176048 Jan 29 07:33  sed.exe*
+-rwxr-xr-x 1 admin 197121   70536 Jan 29 07:33  seq.exe*
+-rwxr-xr-x 1 admin 197121  118584 Jan 29 07:33  setfacl.exe*
+-rwxr-xr-x 1 admin 197121   85024 Jan 29 07:33  setmetamode.exe*
+-rwxr-xr-x 1 admin 197121   29867 Jan 29 07:33  sexp-conv.exe*
+-rwxr-xr-x 1 admin 197121  194205 Jan 29 07:33  sftp.exe*
+-rwxr-xr-x 1 admin 197121 2129408 Jan 29 07:33  sh.exe*
+-rwxr-xr-x 1 admin 197121   50108 Jan 29 07:33  sha1sum.exe*
+-rwxr-xr-x 1 admin 197121   56252 Jan 29 07:33  sha224sum.exe*
+-rwxr-xr-x 1 admin 197121   56252 Jan 29 07:33  sha256sum.exe*
+-rwxr-xr-x 1 admin 197121   61372 Jan 29 07:33  sha384sum.exe*
+-rwxr-xr-x 1 admin 197121   61372 Jan 29 07:33  sha512sum.exe*
+-rwxr-xr-x 1 admin 197121   59021 Jan 29 07:33  shred.exe*
+-rwxr-xr-x 1 admin 197121   55699 Jan 29 07:33  shuf.exe*
+-rwxr-xr-x 1 admin 197121   36515 Jan 29 07:33  sleep.exe*
+-rwxr-xr-x 1 admin 197121  110615 Jan 29 07:33  sort.exe*
+-rwxr-xr-x 1 admin 197121   56260 Jan 29 07:33  split.exe*
+-rwxr-xr-x 1 admin 197121  366436 Jan 29 07:33  ssh-add.exe*
+-rwxr-xr-x 1 admin 197121  348015 Jan 29 07:33  ssh-agent.exe*
+-rwxr-xr-x 1 admin 197121   12676 Jan 29 07:33  ssh-copy-id*
+-rwxr-xr-x 1 admin 197121  495976 Jan 29 07:33  ssh-keygen.exe*
+-rwxr-xr-x 1 admin 197121  455485 Jan 29 07:33  ssh-keyscan.exe*
+-rwxr-xr-x 1 admin 197121   21618 Jan 29 07:33  ssh-pageant.exe*
+-rwxr-xr-x 1 admin 197121  847091 Jan 29 07:33  ssh.exe*
+-rwxr-xr-x 1 admin 197121  888417 Jan 29 07:33  sshd.exe*
+-rwxr-xr-x 1 admin 197121  123888 Jan 29 07:33  ssp.exe*
+-rwxr-xr-x 1 admin 197121     246 Jan 29 07:33  start*
+-rwxr-xr-x 1 admin 197121   98745 Jan 29 07:33  stat.exe*
+-rwxr-xr-x 1 admin 197121   70048 Jan 29 07:33  stdbuf.exe*
+-rwxr-xr-x 1 admin 197121  480336 Jan 29 07:33  strace.exe*
+-rwxr-xr-x 1 admin 197121   92292 Jan 29 07:33  stty.exe*
+-rwxr-xr-x 1 admin 197121   43993 Jan 29 07:33  sum.exe*
+-rwxr-xr-x 1 admin 197121   35450 Jan 29 07:33  sync.exe*
+-rwxr-xr-x 1 admin 197121   14848 Jan 29 07:33  tabs.exe*
+-rwxr-xr-x 1 admin 197121  108244 Jan 29 07:33  tac.exe*
+-rwxr-xr-x 1 admin 197121   57641 Jan 29 07:33  tail.exe*
+-rwxr-xr-x 1 admin 197121  490699 Jan 29 07:33  tar.exe*
+-rwxr-xr-x 1 admin 197121   38794 Jan 29 07:33  tee.exe*
+-rwxr-xr-x 1 admin 197121   71355 Jan 29 07:33  test.exe*
+-rwxr-xr-x 1 admin 197121   78336 Jan 29 07:33  tic.exe*
+-rwxr-xr-x 1 admin 197121  663188 Jan 29 07:33  tig.exe*
+-rwxr-xr-x 1 admin 197121   43256 Jan 29 07:33  timeout.exe*
+-rwxr-xr-x 1 admin 197121   15360 Jan 29 07:33  toe.exe*
+-rwxr-xr-x 1 admin 197121  108999 Jan 29 07:33  touch.exe*
+-rwxr-xr-x 1 admin 197121   18944 Jan 29 07:33  tput.exe*
+-rwxr-xr-x 1 admin 197121   50484 Jan 29 07:33  tr.exe*
+-rwxr-xr-x 1 admin 197121   34147 Jan 29 07:33  true.exe*
+-rwxr-xr-x 1 admin 197121   40703 Jan 29 07:33  truncate.exe*
+-rwxr-xr-x 1 admin 197121  182102 Jan 29 07:33  trust.exe*
+-rwxr-xr-x 1 admin 197121   21504 Jan 29 07:33  tset.exe*
+-rwxr-xr-x 1 admin 197121   49447 Jan 29 07:33  tsort.exe*
+-rwxr-xr-x 1 admin 197121   34336 Jan 29 07:33  tty.exe*
+-rwxr-xr-x 1 admin 197121  137528 Jan 29 07:33  tzset.exe*
+-rwxr-xr-x 1 admin 197121   51302 Jan 29 07:33  u2d.exe*
+-rwxr-xr-x 1 admin 197121   89824 Jan 29 07:33  umount.exe*
+-rwxr-xr-x 1 admin 197121   36388 Jan 29 07:33  uname.exe*
+-rwxr-xr-x 1 admin 197121    2346 Jan 29 07:33  uncompress*
+-rwxr-xr-x 1 admin 197121   39737 Jan 29 07:33  unexpand.exe*
+-rwxr-xr-x 1 admin 197121   45531 Jan 29 07:33  uniq.exe*
+-rwxr-xr-x 1 admin 197121   51302 Jan 29 07:33  unix2dos.exe*
+-rwxr-xr-x 1 admin 197121   51302 Jan 29 07:33  unix2mac.exe*
+-rwxr-xr-x 1 admin 197121   34848 Jan 29 07:33  unlink.exe*
+-rwxr-xr-x 1 admin 197121  173708 Jan 29 07:33  unzip.exe*
+-rwxr-xr-x 1 admin 197121   83158 Jan 29 07:33  unzipsfx.exe*
+-rwxr-xr-x 1 admin 197121    1373 Jan 29 07:33  update-ca-trust*
+-rwxr-xr-x 1 admin 197121    9080 Jan 29 07:33  updatedb*
+-rwxr-xr-x 1 admin 197121   36102 Jan 29 07:33  users.exe*
+-rwxr-xr-x 1 admin 197121  151527 Jan 29 07:33  vdir.exe*
+drwxr-xr-x 1 admin 197121       0 Feb  1 01:54  vendor_perl/
+-rwxr-xr-x 1 admin 197121      25 Jan 29 07:33  vi*
+-rwxr-xr-x 1 admin 197121 3326494 Jan 29 07:33  view.exe*
+-rwxr-xr-x 1 admin 197121 3326494 Jan 29 07:33  vim.exe*
+-rwxr-xr-x 1 admin 197121 3326494 Jan 29 07:33  vimdiff.exe*
+-rwxr-xr-x 1 admin 197121    2154 Jan 29 07:33  vimtutor*
+-rwxr-xr-x 1 admin 197121   15960 Jan 29 07:33  watchgnupg.exe*
+-rwxr-xr-x 1 admin 197121   47878 Jan 29 07:33  wc.exe*
+-rwxr-xr-x 1 admin 197121   30538 Jan 29 07:33  which.exe*
+-rwxr-xr-x 1 admin 197121   71827 Jan 29 07:33  who.exe*
+-rwxr-xr-x 1 admin 197121   34911 Jan 29 07:33  whoami.exe*
+-rwxr-xr-x 1 admin 197121  901632 Jan 29 07:33  winpty-agent.exe*
+-rwxr-xr-x 1 admin 197121  791040 Jan 29 07:33  winpty-debugserver.exe*
+-rwxr-xr-x 1 admin 197121  830976 Jan 29 07:33  winpty.dll*
+-rwxr-xr-x 1 admin 197121  749056 Jan 29 07:33  winpty.exe*
+-rwxr-xr-x 1 admin 197121     635 Jan 29 07:33  wordpad*
+-rwxr-xr-x 1 admin 197121   68744 Jan 29 07:33  xargs.exe*
+-rwxr-xr-x 1 admin 197121  288563 Jan 29 07:33  xgettext.exe*
+-rwxr-xr-x 1 admin 197121   19471 Jan 29 07:33  xxd.exe*
+-rwxr-xr-x 1 admin 197121   31975 Jan 29 07:33  yat2m.exe*
+-rwxr-xr-x 1 admin 197121   35359 Jan 29 07:33  yes.exe*
+-rwxr-xr-x 1 admin 197121    1984 Jan 29 07:33  zcat*
+-rwxr-xr-x 1 admin 197121    1678 Jan 29 07:33  zcmp*
+-rwxr-xr-x 1 admin 197121    5880 Jan 29 07:33  zdiff*
+-rwxr-xr-x 1 admin 197121      29 Jan 29 07:33  zegrep*
+-rwxr-xr-x 1 admin 197121      29 Jan 29 07:33  zfgrep*
+-rwxr-xr-x 1 admin 197121    2081 Jan 29 07:33  zforce*
+-rwxr-xr-x 1 admin 197121    7594 Jan 29 07:33  zgrep*
+-rwxr-xr-x 1 admin 197121    2953 Jan 29 07:33  zipgrep*
+-rwxr-xr-x 1 admin 197121  173708 Jan 29 07:33  zipinfo.exe*
+-rwxr-xr-x 1 admin 197121    2206 Jan 29 07:33  zless*
+-rwxr-xr-x 1 admin 197121    1842 Jan 29 07:33  zmore*
+-rwxr-xr-x 1 admin 197121    4553 Jan 29 07:33  znew*
+
+$ ls /bin //Only shows command which is in bin
+'[.exe'*                      infotocap.exe*                pathchk.exe*
+ addgnupghome*                install.exe*                  perl.exe*
+ applygnupgdefaults*          join.exe*                     perl5.34.0.exe*
+ arch.exe*                    kbxutil.exe*                  pinentry-w32.exe*
+ astextplain*                 kill.exe*                     pinentry.exe*
+ autopoint*                   ldd.exe*                      pinky.exe*
+ awk.exe*                     ldh.exe*                      pkcs1-conv.exe*
+ b2sum.exe*                   less.exe*                     pldd.exe*
+ backup*                      lessecho.exe*                 pluginviewer.exe*
+ base32.exe*                  lesskey.exe*                  pr.exe*
+ base64.exe*                  link.exe*                     printenv.exe*
+ basename.exe*                ln.exe*                       printf.exe*
+ basenc.exe*                  locale.exe*                   profiler.exe*
+ bash.exe*                    locate.exe*                   ps.exe*
+ bashbug*                     logname.exe*                  psl-make-dafsa*
+ bunzip2.exe*                 ls.exe*                       psl.exe*
+ bzcat.exe*                   lsattr.exe*                   ptx.exe*
+ bzcmp*                       mac2unix.exe*                 pwd.exe*
+ bzdiff*                      md5sum.exe*                   readlink.exe*
+ bzegrep*                     minidumper.exe*               realpath.exe*
+ bzfgrep*                     mintheme*                     rebase.exe*
+ bzgrep*                      mintty.exe*                   rebaseall*
+ bzip2.exe*                   mkdir.exe*                    recode-sr-latin.exe*
+ bzip2recover.exe*            mkfifo.exe*                   regtool.exe*
+ bzless*                      mkgroup.exe*                  reset.exe*
+ bzmore*                      mknod.exe*                    restore*
+ c_rehash*                    mkpasswd.exe*                 rm.exe*
+ captoinfo.exe*               mktemp.exe*                   rmdir.exe*
+ cat.exe*                     mount.exe*                    rnano.exe*
+ chattr.exe*                  mpicalc.exe*                  runcon.exe*
+ chcon.exe*                   msgattrib.exe*                rview.exe*
+ chgrp.exe*                   msgcat.exe*                   rvim.exe*
+ chmod.exe*                   msgcmp.exe*                   scp.exe*
+ chown.exe*                   msgcomm.exe*                  sdiff.exe*
+ chroot.exe*                  msgconv.exe*                  sed.exe*
+ cksum.exe*                   msgen.exe*                    seq.exe*
+ clear.exe*                   msgexec.exe*                  setfacl.exe*
+ cmp.exe*                     msgfilter.exe*                setmetamode.exe*
+ column.exe*                  msgfmt.exe*                   sexp-conv.exe*
+ comm.exe*                    msggrep.exe*                  sftp.exe*
+ core_perl/                   msginit.exe*                  sh.exe*
+ cp.exe*                      msgmerge.exe*                 sha1sum.exe*
+ csplit.exe*                  msgunfmt.exe*                 sha224sum.exe*
+ cut.exe*                     msguniq.exe*                  sha256sum.exe*
+ cygcheck.exe*                msys-2.0.dll*                 sha384sum.exe*
+ cygpath.exe*                 msys-apr-1-0.dll*             sha512sum.exe*
+ cygwin-console-helper.exe*   msys-aprutil-1-0.dll*         shred.exe*
+ d2u.exe*                     msys-asn1-8.dll*              shuf.exe*
+ dash.exe*                    msys-assuan-0.dll*            sleep.exe*
+ date.exe*                    msys-bz2-1.dll*               sort.exe*
+ dd.exe*                      msys-cbor-0.8.dll*            split.exe*
+ df.exe*                      msys-com_err-1.dll*           ssh-add.exe*
+ diff.exe*                    msys-crypt-0.dll*             ssh-agent.exe*
+ diff3.exe*                   msys-crypto-1.1.dll*          ssh-copy-id*
+ dir.exe*                     msys-edit-0.dll*              ssh-keygen.exe*
+ dircolors.exe*               msys-expat-1.dll*             ssh-keyscan.exe*
+ dirmngr-client.exe*          msys-ffi-7.dll*               ssh-pageant.exe*
+ dirmngr.exe*                 msys-fido2-1.dll*             ssh.exe*
+ dirname.exe*                 msys-gcc_s-seh-1.dll*         sshd.exe*
+ docx2txt*                    msys-gcrypt-20.dll*           ssp.exe*
+ docx2txt.pl*                 msys-gettextlib-0-21.dll*     start*
+ dos2unix.exe*                msys-gettextsrc-0-21.dll*     stat.exe*
+ du.exe*                      msys-gio-2.0-0.dll*           stdbuf.exe*
+ dumpsexp.exe*                msys-glib-2.0-0.dll*          strace.exe*
+ echo.exe*                    msys-gmodule-2.0-0.dll*       stty.exe*
+ egrep*                       msys-gmp-10.dll*              sum.exe*
+ env.exe*                     msys-gnutls-30.dll*           sync.exe*
+ envsubst.exe*                msys-gobject-2.0-0.dll*       tabs.exe*
+ ex.exe*                      msys-gpg-error-0.dll*         tac.exe*
+ expand.exe*                  msys-gssapi-3.dll*            tail.exe*
+ expr.exe*                    msys-hcrypto-4.dll*           tar.exe*
+ factor.exe*                  msys-heimbase-1.dll*          tee.exe*
+ false.exe*                   msys-heimntlm-0.dll*          test.exe*
+ fgrep*                       msys-hogweed-6.dll*           tic.exe*
+ fido2-assert.exe*            msys-hx509-5.dll*             tig.exe*
+ fido2-cred.exe*              msys-iconv-2.dll*             timeout.exe*
+ fido2-token.exe*             msys-idn2-0.dll*              toe.exe*
+ file.exe*                    msys-intl-8.dll*              touch.exe*
+ find.exe*                    msys-kafs-0.dll*              tput.exe*
+ findssl.sh*                  msys-krb5-26.dll*             tr.exe*
+ fmt.exe*                     msys-ksba-8.dll*              true.exe*
+ fold.exe*                    msys-lz4-1.dll*               truncate.exe*
+ funzip.exe*                  msys-magic-1.dll*             trust.exe*
+ gapplication.exe*            msys-mpfr-6.dll*              tset.exe*
+ gawk-5.0.0.exe*              msys-ncursesw6.dll*           tsort.exe*
+ gawk.exe*                    msys-nettle-8.dll*            tty.exe*
+ gdbus.exe*                   msys-npth-0.dll*              tzset.exe*
+ gencat.exe*                  msys-p11-kit-0.dll*           u2d.exe*
+ getconf.exe*                 msys-pcre-1.dll*              umount.exe*
+ getemojis*                   msys-perl5_34.dll*            uname.exe*
+ getfacl.exe*                 msys-psl-5.dll*               uncompress*
+ getopt.exe*                  msys-readline8.dll*           unexpand.exe*
+ gettext.exe*                 msys-roken-18.dll*            uniq.exe*
+ gettext.sh*                  msys-sasl2-3.dll*             unix2dos.exe*
+ gettextize*                  msys-serf-1-0.dll*            unix2mac.exe*
+ gio-querymodules.exe*        msys-smartcols-1.dll*         unlink.exe*
+ git-flow*                    msys-sqlite3-0.dll*           unzip.exe*
+ git-flow-bugfix              msys-ssl-1.1.dll*             unzipsfx.exe*
+ git-flow-config              msys-svn_client-1-0.dll*      update-ca-trust*
+ git-flow-feature             msys-svn_delta-1-0.dll*       updatedb*
+ git-flow-hotfix              msys-svn_diff-1-0.dll*        users.exe*
+ git-flow-init                msys-svn_fs-1-0.dll*          vdir.exe*
+ git-flow-log                 msys-svn_fs_fs-1-0.dll*       vendor_perl/
+ git-flow-release             msys-svn_fs_util-1-0.dll*     vi*
+ git-flow-support             msys-svn_fs_x-1-0.dll*        view.exe*
+ git-flow-version             msys-svn_ra-1-0.dll*          vim.exe*
+ gitflow-common               msys-svn_ra_local-1-0.dll*    vimdiff.exe*
+ gitflow-shFlags              msys-svn_ra_serf-1-0.dll*     vimtutor*
+ gkill.exe*                   msys-svn_ra_svn-1-0.dll*      watchgnupg.exe*
+ glib-compile-schemas.exe*    msys-svn_repos-1-0.dll*       wc.exe*
+ gmondump.exe*                msys-svn_subr-1-0.dll*        which.exe*
+ gobject-query.exe*           msys-svn_swig_perl-1-0.dll*   who.exe*
+ gpg-agent.exe*               msys-svn_wc-1-0.dll*          whoami.exe*
+ gpg-connect-agent.exe*       msys-tasn1-6.dll*             winpty-agent.exe*
+ gpg-error.exe*               msys-ticw6.dll*               winpty-debugserver.exe*
+ gpg-wks-server.exe*          msys-unistring-2.dll*         winpty.dll*
+ gpg.exe*                     msys-uuid-1.dll*              winpty.exe*
+ gpgconf.exe*                 msys-wind-0.dll*              wordpad*
+ gpgparsemail.exe*            msys-z.dll*                   xargs.exe*
+ gpgscm.exe*                  mv.exe*                       xgettext.exe*
+ gpgsm.exe*                   nano.exe*                     xxd.exe*
+ gpgsplit.exe*                nettle-hash.exe*              yat2m.exe*
+ gpgtar.exe*                  nettle-lfib-stream.exe*       yes.exe*
+ gpgv.exe*                    nettle-pbkdf2.exe*            zcat*
+ grep.exe*                    ngettext.exe*                 zcmp*
+ groups.exe*                  nice.exe*                     zdiff*
+ gsettings.exe*               nl.exe*                       zegrep*
+ gunzip*                      nohup.exe*                    zfgrep*
+ gzexe*                       notepad*                      zforce*
+ gzip.exe*                    nproc.exe*                    zgrep*
+ head.exe*                    numfmt.exe*                   zipgrep*
+ hmac256.exe*                 od.exe*                       zipinfo.exe*
+ hostid.exe*                  openssl.exe*                  zless*
+ hostname.exe*                p11-kit.exe*                  zmore*
+ iconv.exe*                   passwd.exe*                   znew*
+ id.exe*                      paste.exe*
+ infocmp.exe*                 patch.exe*
+
+$ cd .. //go to one step back
+
+$ ls /etc //shows content in etc directory
+DIR_COLORS        gitattributes        msystem        package-versions.txt  protocols
+bash.bash_logout  gitconfig            mtab@          pkcs11/               services
+bash.bashrc       hosts                nanorc         pki/                  ssh/
+docx2txt.config   inputrc              networks       profile               tigrc
+fstab             install-options.txt  nsswitch.conf  profile.d/            vimrc
+
+$  ls /etc/ssh
+moduli  ssh_config  sshd_config
+
+$ cat /etc/ssh
+cat: /etc/ssh: Is a directory
+
+$ less /etc/ssh
+/etc/ssh is a directory
+
+$ ls /etc/profile.d
+aliases.sh  bash_profile.sh  env.sh  git-prompt.sh  lang.sh  perlbin.csh  perlbin.sh
+
+$ head etc/profile.d //Display 10 lines from top
+head: cannot open 'etc/profile.d' for reading: No such file or directory
+
+$ tail etc/profile.d //Display 10 lines from bottom
+tail: cannot open 'etc/profile.d' for reading: No such file or directory
+
+$ find . -size +5M //Display size of file & folder in current directory, size is greater then 5MB
+./.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/2.8.4/bin/runtimes/linux-x64/native/centos6-librdkafka.so
+./.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/2.8.4/bin/runtimes/win7-x64/native/Microsoft.Azure.Documents.ServiceInterop.dll
+./.vscode/extensions/angular.ng-template-13.3.1/index.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/@angular/language-service/bundles/language-service.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsc.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsserver.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsserverlibrary.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typescript.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typescriptServices.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typingsInstaller.js
+./.vscode/extensions/ms-azuretools.vscode-azurefunctions-1.6.2/dist/extension.bundle.js
+./AppData/Local/Comms/UnistoreDB/store.vol
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/data_1
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/data_2
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/data_3
+
+$ find . -size 5M
+./.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/2.8.4/bin/runtimes/linux-arm64/native/librdkafka.so
+./.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/2.8.4/bin/runtimes/linux-x64/native/alpine-librdkafka.so
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/f_0046cc
+
+$ find . -size +5M -name *.js //Display js file
+./.vscode/extensions/angular.ng-template-13.3.1/index.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/@angular/language-service/bundles/language-service.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsc.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsserver.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsserverlibrary.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typescript.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typescriptServices.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typingsInstaller.js
+./.vscode/extensions/ms-azuretools.vscode-azurefunctions-1.6.2/dist/extension.bundle.js
+
+$ find . -size +5M -type f -name *.js //Display in my current directory the size i.e 5mb and type is file and name i.e the js
+./.vscode/extensions/angular.ng-template-13.3.1/index.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/@angular/language-service/bundles/language-service.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsc.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsserver.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/tsserverlibrary.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typescript.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typescriptServices.js
+./.vscode/extensions/angular.ng-template-13.3.1/node_modules/typescript/lib/typingsInstaller.js
+./.vscode/extensions/ms-azuretools.vscode-azurefunctions-1.6.2/dist/extension.bundle.js
+
+$ cat hello.java //cat command is used to display content of files in browser
+public class Hello {
+public static void main(String args[]){
+while (true){
+System.out.println("Hello World");
+try{
+Thread.sleep(60000);
+}catch (Exception ex){}
+}
+}
+}
+
+$ env //Display environment
+USERDOMAIN=DESKTOP-ACF01CJ
+OS=Windows_NT
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+PROCESSOR_LEVEL=6
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\PowerShell\Modules\
+CommonProgramW6432=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+MSYSTEM_CARCH=x86_64
+DISPLAY=needs-to-be-defined
+HOSTNAME=DESKTOP-ACF01CJ
+PUBLIC=C:\Users\Public
+CONFIG_SITE=/etc/config.site
+EXEPATH=C:\Program Files\Git
+MSYSTEM_CHOST=x86_64-w64-mingw32
+USERNAME=admin
+ChocolateyInstall=C:\ProgramData\chocolatey
+LOGONSERVER=\\DESKTOP-ACF01CJ
+PROCESSOR_ARCHITECTURE=AMD64
+LOCALAPPDATA=C:\Users\admin\AppData\Local
+COMPUTERNAME=DESKTOP-ACF01CJ
+!::=::\
+SYSTEMDRIVE=C:
+USERPROFILE=C:\Users\admin
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+SYSTEMROOT=C:\WINDOWS
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-ACF01CJ
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+OneDriveConsumer=C:\Users\admin\OneDrive
+PWD=/c/Users/admin
+SSH_ASKPASS=/mingw64/bin/git-askpass.exe
+HOME=/c/Users/admin
+TMP=/tmp
+LC_CTYPE=en_US.UTF-8
+TERM_PROGRAM=mintty
+TERM_PROGRAM_VERSION=3.5.2
+MSYSTEM_PREFIX=/mingw64
+OneDrive=C:\Users\admin\OneDrive
+ZES_ENABLE_SYSMAN=1
+PROCESSOR_REVISION=4e03
+TMPDIR=/tmp
+SynaProgDir=Synaptics\SynTP
+NUMBER_OF_PROCESSORS=4
+ProgramW6432=C:\Program Files
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+APPDATA=C:\Users\admin\AppData\Roaming
+SHELL=/usr/bin/bash
+TERM=xterm
+WINDIR=C:\WINDOWS
+MINGW_CHOST=x86_64-w64-mingw32
+ProgramData=C:\ProgramData
+SHLVL=1
+PLINK_PROTOCOL=ssh
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+PROGRAMFILES=C:\Program Files
+MANPATH=/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+ORIGINAL_TEMP=/tmp
+ORIGINAL_TMP=/tmp
+ALLUSERSPROFILE=C:\ProgramData
+TEMP=/tmp
+DriverData=C:\Windows\System32\Drivers\DriverData
+MSYSTEM=MINGW64
+MINGW_PREFIX=/mingw64
+SESSIONNAME=Console
+ProgramFiles(x86)=C:\Program Files (x86)
+PATH=/c/Users/admin/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/Users/admin/bin:/c/Program Files/Common Files/Oracle/Java/javapath:/c/Python310/Scripts:/c/Python310:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/nodejs:/c/ProgramData/chocolatey/bin:/c/Program Files/dotnet:/cmd:/c/Program Files/MongoDB/Server/5.0/bin:/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn:/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn:/c/Program Files/Microsoft SQL Server/150/Tools/Binn:/c/Program Files/Microsoft SQL Server/150/DTS/Binn:/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn:/c/Program Files/Azure Data Studio/bin:/c/Program Files/MySQL/MySQL Shell 8.0/bin:/c/Users/admin/AppData/Local/Microsoft/WindowsApps:/c/Users/admin/AppData/Roaming/npm:/c/Users/admin/.dotnet/tools:/c/Program Files/Azure Data Studio/bin:/c/Program Files/MongoDB/Server/5.0/bin:/c/Program Files/Azure Data Studio/bin:/c/Users/admin/AppData/Local/Programs/Microsoft VS Code/bin:/usr/bin/vendor_perl:/usr/bin/core_perl
+PS1=\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$
+HOMEDRIVE=C:
+ChocolateyLastPathUpdate=132879112679818545
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+HOMEPATH=\Users\admin
+ORIGINAL_PATH=/mingw64/bin:/usr/bin:/c/Users/admin/bin:/c/Program Files/Common Files/Oracle/Java/javapath:/c/Python310/Scripts:/c/Python310:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/nodejs:/c/ProgramData/chocolatey/bin:/c/Program Files/dotnet:/cmd:/c/Program Files/MongoDB/Server/5.0/bin:/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn:/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn:/c/Program Files/Microsoft SQL Server/150/Tools/Binn:/c/Program Files/Microsoft SQL Server/150/DTS/Binn:/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn:/c/Program Files/Azure Data Studio/bin:/c/Program Files/MySQL/MySQL Shell 8.0/bin:/c/Users/admin/AppData/Local/Microsoft/WindowsApps:/c/Users/admin/AppData/Roaming/npm:/c/Users/admin/.dotnet/tools:/c/Program Files/Azure Data Studio/bin:/c/Program Files/MongoDB/Server/5.0/bin:/c/Program Files/Azure Data Studio/bin:/c/Users/admin/AppData/Local/Programs/Microsoft VS Code/bin
+_=/usr/bin/env
+OLDPWD=/c/Users/admin
+
+$ du -sh temp/ //Display size in mb;(Here size of temp is 0mb)
+0       temp/
+
+$ du -sm temp/ //Display size without mb
+0       temp/
+
+$ du -sk temp/ //Display size in kb
+0       temp/
+
+
+DAY-2
+
+nano d.java //create d file
+
+public class  A {
+public static void main(String args[]){
+System.out.println("Hello World");
+}
+}
+
+$ java d.java
+Hello World
+
+$ ps //Display Process
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     1069    1068    1069      11180  pty1      197609 08:08:29 /usr/bin/bash
+     1068       1    1068       6288  ?         197609 08:08:28 /usr/bin/mintty
+     1553    1069    1553       3232  pty1      197609 09:18:32 /usr/bin/ps
+
+$ ps -elf //Display all the process
+     UID     PID    PPID  TTY        STIME COMMAND
+   admin    1069    1068 pty1     08:08:29 /usr/bin/bash
+   admin    1068       1 ?        08:08:28 /usr/bin/mintty
+   admin    1549    1069 pty1     09:18:28 /usr/bin/ps
+
+public class  A {
+public static void main(String args[]){
+while(true){
+System.out.println("Hello World");
+try{
+Thread.sleep(40000);
+}catch (Exception e){}
+}
+}
+}
+
+$ java d.java
+Hello World
+Hello World
+Hello World
+
+$jobs //shows the process
+[1]  stopped java d.java
+
+$fg %1 //Restart the process in forground
+
+$bg %1 //Start the process in background
+[1] Running java d.java
+
+$ java d.java & //start the process in background
+[1] 1603
+
+$ fg %1
+java d.java
+Hello World
+
+
+
+$kill %1 //kill job which id is 1
+
+Day-3 & 4
+
+$ ls -p
+a/  abc  abc.txt  b/  bd.txt  c/  def  def.txt  ef.txt  x.txt
+
+$ ls -l
+total 0
+drwxr-xr-x 1 admin 197121 0 May  2 08:21 a/
+-rw-r--r-- 1 admin 197121 0 May  2 08:13 abc
+-rw-r--r-- 1 admin 197121 0 May  2 08:33 abc.txt
+drwxr-xr-x 1 admin 197121 0 May  2 08:11 b/
+-rw-r--r-- 1 admin 197121 0 May  2 08:13 bd.txt
+drwxr-xr-x 1 admin 197121 0 May  2 08:11 c/
+-rw-r--r-- 1 admin 197121 0 May  2 08:13 def
+-rw-r--r-- 1 admin 197121 0 May  2 08:35 def.txt
+-rw-r--r-- 1 admin 197121 0 May  2 08:35 ef.txt
+-rw-r--r-- 1 admin 197121 0 May  2 08:33 x.txt
+
+#b.sh
+
+for file in `ls *.txt`;
+do
+folderName=`echo $file | awk -F. '{print $1}'`;
+if [ -d $folderName ]
+then
+rm -R $folderName
+fi
+mkdir $folderName;
+cp $file $folderName;
+done
+
+$ bash -x ./b.sh
+++ ls abc.txt bd.txt def.txt ef.txt x.txt
++ for file in `ls *.txt`
+++ echo abc.txt
+++ awk -F. '{print $1}'
++ folderName=abc
++ '[' -d abc ']'
++ mkdir abc
+mkdir: cannot create directory ‘abc’: File exists
++ cp abc.txt abc
++ for file in `ls *.txt`
+++ echo bd.txt
+++ awk -F. '{print $1}'
++ folderName=bd
++ '[' -d bd ']'
++ mkdir bd
++ cp bd.txt bd
++ for file in `ls *.txt`
+++ echo def.txt
+++ awk -F. '{print $1}'
++ folderName=def
++ '[' -d def ']'
++ mkdir def
+mkdir: cannot create directory ‘def’: File exists
++ cp def.txt def
++ for file in `ls *.txt`
+++ echo ef.txt
+++ awk -F. '{print $1}'
++ folderName=ef
++ '[' -d ef ']'
++ mkdir ef
++ cp ef.txt ef
++ for file in `ls *.txt`
+++ echo x.txt
+++ awk -F. '{print $1}'
++ folderName=x
++ '[' -d x ']'
++ mkdir x
++ cp x.txt x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
